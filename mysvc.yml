@@ -3,12 +3,13 @@ kind: Service
 metadata:
   name: harsh-svc
   labels:
-    app: myjavaapp
+    app: mynginx
 spec:
   type: NodePort
-  selector:
-    app: myjavaapp
   ports:
-  - port: 8080
+  - port: 80
     nodePort: 30001
     protocol: TCP
+  selector:
+    app: mynginx
+  
