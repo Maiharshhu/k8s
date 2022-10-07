@@ -11,6 +11,5 @@ spec:
         memory: "128Mi"
         cpu: "500m"
     ports:
-      - Port: 80
-        containerPort: 30001
+      - containerPort: 30001
         
