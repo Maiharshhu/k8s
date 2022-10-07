@@ -4,6 +4,7 @@ metadata:
   name: harsh-svc
   labels:
     app: myjavaapp
+    version: 2.6.2
 spec:
   type: NodePort
   port:
