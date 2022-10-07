@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 3
   selector:
-    app: myjavaapp-rc
+    app: myjavaapp
     version: 2.6.2
   template:
     metadata:
