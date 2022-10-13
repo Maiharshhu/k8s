@@ -1,0 +1,14 @@
+myjavaapp-svc   10.244.1.6:8080,10.244.2.2:8080  R1-sunil login
+myjavaapp-svc   10.244.1.7:8080,10.244.2.3:8080  R2-hari login
+--------------------------------------------------------------
+if anyproblem in release 2(R2) we can easily able to role back
+steps for rollback:
+1) go to or rc and svc file and change values as previous release like image tag number and version after applying changes
+upload to git hub.
+2)Now go to k8s server and git pull then execute rc and svc files again.
+kubectl apply -f myrc.yml
+kubectl apply -f mysvc.yml
+after apply check endpoint of this release if it is same as previous then it indicates that we are successfully rollback to previous release
+myjavaapp-svc   10.244.1.6:8080,10.244.2.2:8080  R1 sunil login
+we can also check with using public ip of any node and :30001/mahaLogin if it is show our login page then it is ok
+publicipofnode:30001/mahaLogin

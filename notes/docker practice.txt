@@ -1,0 +1,56 @@
+ apt-get update
+    2  apt update
+    3  sudo apt install apt-transport-https ca-certificates curl software-properties-common
+    4  sudo apt-get install     ca-certificates     curl     gnupg     lsb-release
+    5  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+    6    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+    7  docker ps -a
+    8  docker --version
+    9  docker images
+   10  docker ps -a (statecheck)
+   11  docker ps -a
+   12  docker run --name mycl -d nginx
+   13  docker image
+   14  docker images
+   15  docker rm nginx
+   16  docker rm
+   17  docker images
+   18  ls
+   19  docker ps
+   20  docker ps -a
+   21  docker rm mycl -f
+   22  docker rmi nginx
+   23  docker images
+   24  docker rm
+   25  docker ps
+   26  docker run --name myc1 -d nginx
+   27  docker images
+   28  docker ps
+   29  docker run --name myc2 -d nginx
+   30  docker ps
+   31  docker rmi nginx:latest
+   32  docker rm myc1 -f
+   33  docker rm myc2 -f
+   34  apt update
+   35  docker --version
+   36  docker --images
+   37  docker images
+   38  docker ps
+   39  docker ps -a
+   40  docker run
+   41  docker run --name myc1 -d nginx
+   42  docker ps
+   43  docker run --name myc2 -d jenkins
+   44  docker run --name myc2 -d tomcat
+   45  docker run --name myc3 -d
+   46  docker ps
+   47  docker run --name myc3 -d apache2
+   48  docker search apache2
+   49  docker run --myc3 -d ubuntu/apache2
+   50  docker run --name myc3 -d ubuntu/apache2
+   51  docker ps
+   52  docker stop myc1
+   53  docker ps
+   54  docker run --help
+   55  apt update
+   56  history
